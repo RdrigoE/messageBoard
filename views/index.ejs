@@ -5,10 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <% messages.forEach(msg => { %>
-    <h2><%= msg.user %></h2>
-    <p><%= msg.text %> </p>
-    <% }) %>
+    <header>
+      <h1><%= title %></h1>
+    </header>
+    <section>
+      <% messages.forEach(msg => { %>
+        <div class="card">
+          <h2><%= msg.user %></h2>
+          <p><%= msg.text %> </p>
+        </div>
+      <% }) %>
+    </section>
+    <footer>
+      <p>Rodrigo Eusébio</p>
+    </footer>
   </body>
 </html>
