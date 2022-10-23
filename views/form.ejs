@@ -12,8 +12,9 @@
         <h1><%= title %></h1>
       </header>
       <section >
+        <a href="/"><button id="home" >Back to Feed</button></a>
         <div class="new_user_container">
-        <h2 class="new_user">New user</h2>
+        <h2 class="new_user">New Post</h2>
         <form method="POST" action="/new">
             <div class="form_section">  
               <label for="messageUser">Name:</label>
@@ -24,7 +25,7 @@
               <label for="messageText">Text:</label>
               <textarea id="messageText" name="messageText" required></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" id="submit">Submit</button>
     
         </form>
         </div>
