@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
+const websiteName = "Message Board"
+
 const messages = [
   {
     text: "Hi there!",
@@ -16,11 +18,11 @@ const messages = [
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  	res.render('index', { title: "Mini Messageboard", messages: messages });
+  	res.render('index', { title: websiteName, messages: messages });
 });
 
 router.get("/new", function(req, res, next) {
-  	res.render('form', {title:"Mini Messageboard"});
+  	res.render('form', {title: websiteName});
 });
 
 router.post("/new",function(req,res){

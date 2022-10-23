@@ -42,6 +42,7 @@ section{
   padding: 10px;
   padding-bottom: 0px;
   border-bottom: 2px rgba(170, 169, 169, 0.331) solid;
+  width: 50%;
 }
 
 .card > p {
@@ -63,14 +64,20 @@ footer{
 form{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .new_user_container{
-  height: clamp(200px, 50%,  400px);
+  /* height: clamp(200px, 50%,  400px); */
   width: clamp(300px, 90%,  600px);
   background-color: aliceblue;
   border-radius: 10px;
   padding: 10px;
+}
+
+.form_section{
+  width: 100%;
 }
 
 label{
@@ -84,7 +91,8 @@ input{
   border: 2px solid #ccc;
   border-radius: 4px;
   background-color: #f8f8f8;
-  resize: none; 
+  resize: none;
+  font-size: larger;
 }
 textarea {
   width: 100%;
@@ -95,6 +103,7 @@ textarea {
   border-radius: 4px;
   background-color: #f8f8f8;
   resize: none;
+  font-size: larger;
 }
 
 button {
